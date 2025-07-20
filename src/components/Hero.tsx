@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-hydra-navy/90 to-hydra-blue/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-tech-black/90 to-tech-blue/80"></div>
       </div>
       
       {/* Content */}
@@ -19,9 +19,9 @@ const Hero = () => {
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
               Hydra Tech
-              <span className="block text-hydra-teal">Solution</span>
+              <span className="block text-tech-mint">Solution</span>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-hydra-blue to-hydra-teal mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-tech-blue to-tech-mint mx-auto rounded-full"></div>
           </div>
           
           {/* Tagline */}
@@ -38,7 +38,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button 
-              variant="hydra" 
+              variant="tech" 
               size="lg"
               className="px-8 py-4 text-lg font-semibold"
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
@@ -46,9 +46,9 @@ const Hero = () => {
               View Our Packages
             </Button>
             <Button 
-              variant="hydraOutline" 
+              variant="gold" 
               size="lg"
-              className="px-8 py-4 text-lg font-semibold bg-white/10 border-white/30 text-white hover:bg-white hover:text-hydra-navy"
+              className="px-8 py-4 text-lg font-semibold"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get Quote
@@ -58,15 +58,15 @@ const Hero = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-hydra-teal mb-2">R1500</div>
+              <div className="text-3xl md:text-4xl font-bold text-tech-mint mb-2">R1500</div>
               <div className="text-white/80">Starting Price</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-hydra-teal mb-2">48hrs</div>
+              <div className="text-3xl md:text-4xl font-bold text-tech-mint mb-2">48hrs</div>
               <div className="text-white/80">Quick Delivery</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-hydra-teal mb-2">R100/hr</div>
+              <div className="text-3xl md:text-4xl font-bold text-tech-mint mb-2">R100/hr</div>
               <div className="text-white/80">Update Rate</div>
             </div>
           </div>

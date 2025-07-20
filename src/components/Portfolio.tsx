@@ -100,12 +100,12 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="py-20 bg-gradient-to-b from-background to-hydra-light/10">
+    <section id="portfolio" className="py-20 bg-gradient-to-b from-background to-tech-mint/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Recent <span className="text-hydra-blue">Projects</span>
+            Our Recent <span className="text-tech-blue">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             See how we've helped South African businesses establish their online presence with beautiful, functional websites
@@ -117,7 +117,7 @@ const Portfolio = () => {
           {categories.map((category) => (
             <Button
               key={category.value}
-              variant={filter === category.value ? "hydra" : "hydraOutline"}
+              variant={filter === category.value ? "tech" : "techOutline"}
               size="sm"
               onClick={() => setFilter(category.value)}
               className="flex items-center space-x-2"
@@ -136,7 +136,7 @@ const Portfolio = () => {
           {filteredProjects.map((project) => (
             <Card 
               key={project.id} 
-              className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-background to-hydra-light/20"
+              className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-background to-tech-mint/10"
             >
               {/* Project Image */}
               <div className="relative overflow-hidden">
@@ -145,12 +145,12 @@ const Portfolio = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-hydra-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-tech-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4">
                     <Button 
                       variant="secondary" 
                       size="sm"
-                      className="bg-white/90 text-hydra-navy hover:bg-white"
+                      className="bg-white/90 text-tech-black hover:bg-white"
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       View Site
@@ -160,7 +160,7 @@ const Portfolio = () => {
                 
                 {/* Project Type Badge */}
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-hydra-blue text-white">
+                  <Badge className="bg-tech-blue text-white">
                     {project.type}
                   </Badge>
                 </div>
@@ -169,7 +169,7 @@ const Portfolio = () => {
               <CardContent className="p-6 space-y-4">
                 {/* Title & Description */}
                 <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-hydra-blue transition-colors">
+                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-tech-blue transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -185,7 +185,7 @@ const Portfolio = () => {
                       <Badge 
                         key={index} 
                         variant="secondary" 
-                        className="text-xs bg-hydra-light/50 text-hydra-navy"
+                        className="text-xs bg-tech-mint/20 text-tech-blue"
                       >
                         {feature}
                       </Badge>
@@ -201,7 +201,7 @@ const Portfolio = () => {
                       <Badge 
                         key={index} 
                         variant="outline" 
-                        className="text-xs border-hydra-blue/30 text-hydra-blue"
+                        className="text-xs border-tech-blue/30 text-tech-blue"
                       >
                         {tech}
                       </Badge>
@@ -224,14 +224,14 @@ const Portfolio = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                variant="hydra" 
+                variant="tech" 
                 size="lg"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Start Your Project
               </Button>
               <Button 
-                variant="hydraOutline" 
+                variant="techOutline" 
                 size="lg"
                 onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
               >
