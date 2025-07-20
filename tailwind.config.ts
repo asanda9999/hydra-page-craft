@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				hydra: {
+					blue: 'hsl(var(--hydra-blue))',
+					teal: 'hsl(var(--hydra-teal))',
+					navy: 'hsl(var(--hydra-navy))',
+					light: 'hsl(var(--hydra-light))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
