@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-tech-black text-white">
+    <footer className="bg-[#024b31] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -35,19 +35,19 @@ const Footer = () => {
             </div>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-tech-mint" />
-                <a href="mailto:hello@hydratechsolution.co.za" className="text-white/90 hover:text-tech-mint transition-colors">
+                <Mail className="w-5 h-5 text-green-300" />
+                <a href="mailto:hello@hydratechsolution.co.za" className="text-white/90 hover:text-green-300 transition-colors">
                   hello@hydratechsolution.co.za
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-tech-mint" />
-                <a href="tel:+27123456789" className="text-white/90 hover:text-tech-mint transition-colors">
+                <Phone className="w-5 h-5 text-green-300" />
+                <a href="tel:+27123456789" className="text-white/90 hover:text-green-300 transition-colors">
                   +27 (0) 123 456 789
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-tech-mint" />
+                <MapPin className="w-5 h-5 text-green-300" />
                 <span className="text-white/90">Cape Town, South Africa</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-white/80 hover:text-tech-mint transition-colors"
+                    className="text-white/80 hover:text-green-300 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -78,7 +78,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={service.href}
-                    className="text-white/80 hover:text-tech-mint transition-colors"
+                    className="text-white/80 hover:text-green-300 transition-colors"
                   >
                     {service.label}
                   </a>
@@ -95,7 +95,7 @@ const Footer = () => {
             </p>
             <Button 
               variant="secondary" 
-              className="bg-tech-mint hover:bg-tech-blue text-white border-none w-full"
+              className="bg-green-600 hover:bg-green-700 text-white border-none w-full"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Globe className="w-4 h-4 mr-2" />
@@ -113,10 +113,10 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-white/70 hover:text-tech-mint transition-colors text-sm">
+            <a href="#" className="text-white/70 hover:text-green-300 transition-colors text-sm">
               Privacy Policy
             </a>
-            <a href="#" className="text-white/70 hover:text-tech-mint transition-colors text-sm">
+            <a href="#" className="text-white/70 hover:text-green-300 transition-colors text-sm">
               Terms of Service
             </a>
           </div>

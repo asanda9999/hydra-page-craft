@@ -68,12 +68,12 @@ const Services = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-to-b from-background to-tech-mint/10">
+    <section id="pricing" className="py-20 bg-gradient-to-b from-background to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="text-tech-blue">Packages</span>
+            Our <span className="text-[#024b31]">Packages</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Transparent pricing with everything you need to get your business online
@@ -87,12 +87,12 @@ const Services = () => {
               key={index} 
               className={`relative overflow-hidden transition-all duration-300 hover:shadow-2xl ${
                 pkg.popular 
-                  ? 'border-tech-blue border-2 shadow-lg transform scale-105' 
+                  ? 'border-[#024b31] border-2 shadow-lg transform scale-105' 
                   : 'hover:scale-105'
               }`}
             >
               {pkg.popular && (
-                <div className="absolute top-0 right-0 bg-gradient-to-r from-tech-blue to-tech-mint text-white px-4 py-1 text-sm font-semibold">
+                <div className="absolute top-0 right-0 bg-gradient-to-r from-[#024b31] to-green-600 text-white px-4 py-1 text-sm font-semibold">
                   Most Popular
                 </div>
               )}
@@ -102,7 +102,7 @@ const Services = () => {
                   {pkg.name}
                 </CardTitle>
                 <div className="flex items-center justify-center mb-4">
-                  <span className="text-4xl md:text-5xl font-bold text-tech-blue">{pkg.price}</span>
+                  <span className="text-4xl md:text-5xl font-bold text-[#024b31]">{pkg.price}</span>
                   <span className="text-lg text-muted-foreground ml-2">/ {pkg.pages}</span>
                 </div>
                 <CardDescription className="text-lg">
@@ -113,7 +113,7 @@ const Services = () => {
               <CardContent className="space-y-4">
                 {pkg.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-tech-mint flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-foreground">{feature}</span>
                   </div>
                 ))}
@@ -135,12 +135,12 @@ const Services = () => {
         {/* Additional Services */}
         <div>
           <h3 className="text-3xl font-bold text-center text-foreground mb-12">
-            What's <span className="text-tech-blue">Included</span>
+            What's <span className="text-[#024b31]">Included</span>
           </h3>
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
             {additionalServices.map((service, index) => (
               <div key={index} className="text-center group">
-                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-tech-blue to-tech-mint rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-[#024b31] to-green-600 rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h4 className="text-lg font-semibold text-foreground mb-2">{service.title}</h4>
@@ -151,12 +151,12 @@ const Services = () => {
         </div>
 
         {/* Update Pricing */}
-        <div className="text-center mt-16 p-8 bg-gradient-to-r from-tech-mint/20 to-accent/30 rounded-2xl">
+        <div className="text-center mt-16 p-8 bg-gradient-to-r from-green-100 to-green-50 rounded-2xl">
           <h3 className="text-2xl font-bold text-foreground mb-4">Need Updates Later?</h3>
           <p className="text-lg text-muted-foreground mb-4">
             We provide ongoing support and updates at a competitive hourly rate
           </p>
-          <div className="text-3xl font-bold text-tech-blue">R100 per hour</div>
+          <div className="text-3xl font-bold text-[#024b31]">R100 per hour</div>
           <p className="text-muted-foreground mt-2">For any changes or additions after your site is live</p>
         </div>
       </div>

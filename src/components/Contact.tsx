@@ -60,12 +60,12 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-tech-mint/10 to-background">
+    <section id="contact" className="py-20 bg-gradient-to-b from-green-50 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Get Your <span className="text-tech-blue">Project Started</span>
+            Get Your <span className="text-[#024b31]">Project Started</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to take your business online? Let's discuss your project and provide you with a detailed quote.
@@ -155,7 +155,7 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="bg-gradient-to-br from-tech-blue to-tech-mint text-white shadow-xl">
+            <Card className="bg-gradient-to-br from-[#024b31] to-green-600 text-white shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Let's Build Something Amazing Together</h3>
                 <p className="text-lg text-white/90 mb-8 leading-relaxed">
@@ -191,14 +191,14 @@ const Contact = () => {
               {contactInfo.map((info, index) => (
                 <Card key={index} className="group hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 text-center">
-                    <div className="mx-auto w-12 h-12 bg-gradient-to-br from-tech-blue to-tech-mint rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="mx-auto w-12 h-12 bg-gradient-to-br from-[#024b31] to-green-600 rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300">
                       {info.icon}
                     </div>
                     <h4 className="font-semibold text-foreground mb-2">{info.title}</h4>
                     {info.link !== "#" ? (
                       <a 
                         href={info.link} 
-                        className="text-tech-blue hover:text-tech-mint transition-colors"
+                        className="text-[#024b31] hover:text-green-600 transition-colors"
                       >
                         {info.details}
                       </a>

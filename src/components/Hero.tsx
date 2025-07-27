@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-tech-black/90 to-tech-blue/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#024b31]/90 to-[#024b31]/80"></div>
       </div>
       
       {/* Content */}
@@ -17,11 +17,14 @@ const Hero = () => {
         <div className="space-y-8">
           {/* Logo/Brand */}
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
-              Hydra Tech
-              <span className="block text-tech-mint">Solution</span>
-            </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-tech-blue to-tech-mint mx-auto rounded-full"></div>
+            <div className="flex justify-center mb-4">
+              <img 
+                src="/HydraTech-removebg-preview.png" 
+                alt="Hydra Tech Solutions" 
+                className="h-32 md:h-40 lg:h-48 object-contain"
+              />
+            </div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#024b31] to-green-400 mx-auto rounded-full"></div>
           </div>
           
           {/* Tagline */}
@@ -58,15 +61,15 @@ const Hero = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-tech-mint mb-2">R1500</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-200 mb-2">R1500</div>
               <div className="text-white/80">Starting Price</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-tech-mint mb-2">48hrs</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-200 mb-2">48hrs</div>
               <div className="text-white/80">Quick Delivery</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-tech-mint mb-2">R100/hr</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-200 mb-2">R100/hr</div>
               <div className="text-white/80">Update Rate</div>
             </div>
           </div>
